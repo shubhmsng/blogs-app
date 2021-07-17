@@ -7,6 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import Button from '@material-ui/core/Button';
 
 
 const blog_url = "https://60c5d70fec8ef800175e1837.mockapi.io/blogs";
@@ -63,6 +64,9 @@ function Blogs() {
                         <SearchIcon />
                     </IconButton>
                 </Paper>
+                <Button variant="contained" color="primary">
+                    <Link to="/blog/new" style={{color: "white"}}>Add Blog</Link>
+                </Button>
             </div>
 
             {filteredBlog && filteredBlog.map((blog, id) => 

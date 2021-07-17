@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './Header';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 function Resume() {
     return(
@@ -28,6 +30,9 @@ function Resume() {
                         <li>I am experienced UI Developer certified in React, Front End Web Development and Open Source Development.</li>
                         <li>I have created Online Compiler, Face Recognition Application, PinkBlue PWA, PinkBlue AndroidApplication,Event management Applications from scratch.</li>
                     </ul>
+                    <Button variant="contained" color="primary">
+                        <Link to="/blogs" style={{color: "white"}}>Blogs App</Link>
+                    </Button>
                 </section>
                 <section aria-labelledby="Experience">
                     <h2>Experience</h2>
