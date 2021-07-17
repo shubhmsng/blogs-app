@@ -67,7 +67,6 @@ function Blogs() {
 
             {filteredBlog && filteredBlog.map((blog, id) => 
                 <Link
-                    target="_blank"
                     key={"link-" + id}
                     to={{
                         pathname: "blogs/" + blog.blogName,
